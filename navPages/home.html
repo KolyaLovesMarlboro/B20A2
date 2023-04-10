@@ -1,0 +1,77 @@
+<!-- Mykola Zhuk 1007315512-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Okayreads.com | Home</title>
+  <link rel="icon" href="/images/Logo3.PNG" type="image/icon">
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="header"></header>
+
+  <div class="container">
+    <nav id="navbar">
+      <a href="home.html">HOME</a>
+      <a href="login.html">LOG IN</a>
+      <a href="login.html">ADMIN</a> <!-- for now to verify the admin we will redirect to the login page, 
+        and in Case the user_name is "admin" user will be redirected ti the admin page-->
+    </nav>
+
+    <main>
+      <h2 class="title">TOP 5 BOOKS OF THE WEEK</h2>
+      <ol class="main" id="home-list-books">
+        <li class="book-home" id="book-TTT">
+          <img class="book-cover" src="/images/Book1.jpg">
+          <strong class="book-title">Tomorrow, and Tomorrow, and Tomorrow</strong>
+          <p class="book-description">In this exhilarating novel by the best-selling author of The Storied Life of A. J. Fikry two friends--often in love, but never lovers--come together as creative partners in the world of video game design, where success brings them fame, joy, tragedy, duplicity, and, ultimately, a kind of immortality.... </p>
+          <button type="button" class="details-button"><a href="/bookPages/book1.html">Show More</a></button>
+        </li>
+
+        <li class="book-home" id="book-WYWH">
+          <img class="book-cover" src="/images/Book2.jpg">
+          <strong class="book-title">Wish You Were Here</strong>
+          <p class="book-description">A deeply moving novel about the resilience of the human spirit in a moment of crisis. Diana O'Toole is perfectly on track. She will be married by thirty, done having kids by thirty-five, and move out to the New York City suburbs, all while climbing the professional ladder in the cutthroat art auction world. She's not engaged just yet, but she knows her boyfriend, Finn, a surgical resident, is about to propose on their romantic getaway to the Galápagos—days before her thirtieth birthday....</p>
+          <button type="button" class="details-button"><a href="/bookPages/book2.html">Show More</a></button>
+        </li>
+
+        <li class="book-home" id="book-TW">
+          <img class="book-cover" src="/images/Book3.jpg">
+          <strong class="book-title">The Winners</strong>
+          <p class="book-description">Two years have passed since the events that no one wants to think about. Everyone has tried to move on, but there’s something about this place that prevents it. The residents continue to grapple with life’s big questions: What is a family? What is a community? And what, if anything, are we willing to sacrifice in order to protect them?...</p>
+          <button type="button" class="details-button"><a href="/bookPages/book3.html">Show More</a></button>
+        </li>
+
+        <li class="book-home" id="book-RBC">
+          <img class="book-cover" src="/images/Book4.jpg">
+          <strong class="book-title">Remarkably Bright Creatures</strong>
+          <p class="book-description">For fans of A Man Called Ove, a charming, witty and compulsively readable exploration of friendship, reckoning, and hope, tracing a widow's unlikely connection with a giant Pacific octopus....</p>
+          <button type="button" class="details-button"><a href="/bookPages/book4.html">Show More</a></button>
+        </li>
+
+        <li class="book-home" id="book-THN">
+          <img class="book-cover" src="/images/Book5.jpg">
+          <strong class="book-title">The Hotel Nantucket</strong>
+          <p class="book-description">After a tragic fire in 1922 that killed 19-year-old chambermaid, Grace Hadley, The Hotel Nantucket descended from a gilded age gem to a mediocre budget-friendly lodge to inevitably an abandoned eyesore — until it's purchased and renovated top to bottom by London billionaire, Xavier Darling.  Xavier hires Nantucket sweetheart Lizbet Keaton as his general manager, and Lizbet, in turn, pulls together a charismatic, if inexperienced, staff who share the vision of turning the fate of the hotel around. They face challenges in getting along with one another (and with the guests)...</p>
+          <button type="button" class="details-button"><a href="/bookPages/book5.html">Show More</a></button>
+        </li>
+      </ol>
+
+
+    <footer class="footer">
+
+        <strong>MADE BY MYKOLA ZHUK</strong>
+        <p >"There is no greater loneliness than that of a samurai, except perhaps that of a tiger in the jungle."</p>
+
+    </footer>
+
+    <script src="/script.js"></script>
+    <script>updateBookOrder();</script> <!-- This call is used to update the order of the book each time the page loads-->
+</body>
+
+</html>

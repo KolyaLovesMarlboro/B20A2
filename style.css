@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap'); /* importing the fonts used in styling from google fonts */
+/*setting global font*/
+*{
+    font-family: 'Abel', sans-serif;
+    color: #636362;
+}
+
+/* setting common theme for all the web-pages */
+html, body{ 
+    margin: 0;
+    background-color: #f9e8de;
+    padding-bottom: 60px;
+}
+/* home.html book block setting */
+.container {
+    display: block;
+    margin-left: 20%;
+    max-width: 80%;
+    padding: 20px;
+}
+/* making the link text make not ugly(without the underline) */
+a {
+    text-decoration: none;
+}
+/* bg img and making header sticky */
+.header {
+    margin: 0;
+    background-image: url("images/Logo2.PNG");
+    background-size: cover;
+    padding-bottom: 150px;
+    background-repeat: no-repeat;
+}
+/* navbar for full -sized screen, stuck to the left part of the screen */
+#navbar{
+    position: fixed;
+    top: 150px;
+    left: 0;
+    width: 20%;
+    padding: 10px;
+    background-color: #f5aca4;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+/* making a "buttons" on the navbar */
+#navbar a {
+    margin: 10px 0;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 150%;
+    font-family: 'Bebas Neue', cursive;
+}
+/* making "buttons" on navbar reactive */
+#navbar a:hover{
+    background-color: rgba(248,231,221,0.3);
+}
+
+/* changing settings of the elements when in mobile view*/
+@media screen and (max-width: 600px) {
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: #f5aca4;
+    }
+    #navbar a{
+        display: inline-block;
+        padding: 0 10%;
+    }
+    .container{
+        margin: 0 10%;
+    }
+    .book-home{
+        max-width: 300px;
+    }
+}
+/* styling exclusively for the home page*/
+.main{
+    float: left;
+    width: 80%;
+    margin: 0 auto;
+    float: left;
+    list-style: none;
+}
+/* styling to highlight the title */
+.title {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+/* styling for the <li> elements, first was supposed only for home.html,
+ but was used pretty much everywhere which turned out good-looking and convenient */
+.book-home {
+    width:100%;
+    float: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #f5aca4;
+    border-radius: 5px;
+}
+/* style for the book pictures */
+.book-cover{
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    height: 400px;
+    width: 263px;
+}
+/* styling for the mini-titles
+(smaller then .title, but needs to be highlighted too)*/
+.book-title{
+    margin: 0;
+    font-size: 30px;
+    color: #333;
+}
+/* styling for the <p> element on the home pages and book pages */
+.book-description{
+    margin: 10px 0;
+    font-size: 24px;
+}
+/* styling for the button that ways the user to the personal 
+book page, but was used pretty much everywhere too */
+.details-button {
+    margin-top: 10px;
+    background-color: #f69e8d;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color:#333;
+    font-size: 15px;
+}
+/* making the button styled above reactive to user */
+.details-button:hover{
+    background-color: rgb(245,172,164);
+}
+/* styling the footer*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    color: #333;
+    background-color: #f69e8d;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Bebas Neue', cursive;
+}
+/* additional styling for my name inside of the footer*/
+.footer strong{
+    font-family: 'Bebas Neue', cursive;
+    color: #636362;
+    font-size: 20px;
+}
+/* styling for the text input field  */
+input[type=text] {
+    width: 60%;
+    padding: 8px 16px;
+    margin: 10px 0;
+    font-size: 20px;
+    background-color: #f9e8de;
+    border-radius: 5px;
+    border-color: #f5aca4;
+}
+/* making the text field change color when user is focused*/
+input[type=text]:focus{
+    outline: none;
+    background-color: #f69e8d;
+}
+/* common styling for all the select elements*/
+select{
+    width: 63%;
+    padding: 8px 16px;
+    margin: 10px 0;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #f9e8de;
+    border-color: #f5aca4;
+}
+/* making select reactive to user */
+select:focus{
+    outline-color:#f69e8d ;
+}
+/* styling the text area*/
+#review-comment{
+    resize: both;
+    width: 60%;
+    padding: 8px 16px;
+    margin: 10px 0;
+    font-size: 20px;
+    background-color: #f9e8de;
+    border-radius: 5px;
+    border-color: #f5aca4;
+}
+/* adding refractiveness to the text area*/
+#review-comment:focus{
+    outline: none;
+    background-color: #f69e8d;
+}
+/* just setting the format for all labels for input fields to make look consistent*/
+label{
+    font-size: 20px;
+}

@@ -1,0 +1,71 @@
+<!-- Mykola Zhuk 1007315512-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Okayreads.com | Reviews</title>
+  <link rel="icon" href="/images/Logo3.PNG" type="image/icon">
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="header"></header>
+
+  <div class="container">
+    <nav id="navbar">
+      <a href="/navPages/home.html">HOME</a>
+      <a href="/navPages/login.html">LOG IN</a>
+      <a href="/navPages/login.html">ADMIN</a> <!-- for now to verify the admin we will redirect to the login page, 
+        and in Case the user_name is "admin" user will be redirected ti the admin page-->
+    </nav>
+
+
+    <div class="review-form">
+      <label for="text">First Name:</label><br>
+      <input type="text" id="review-fname" name="text"><br>
+      <label for="text">Surname:</label><br>
+      <input type="text" id="review-sname" name="text"><br>
+      <label for="review-rating">Rating:</label><br>
+      <select id="review-rating" name="review-rating">
+        <option value="0">Pick Rating</option>
+        <option value="1">1 star</option>
+        <option value="2">2 stars</option>
+        <option value="3">3 stars</option>
+        <option value="4">4 stars</option>
+        <option value="5">5 stars</option>
+      </select><br>
+      <label for="review-book">Book:</label><br>
+      <select id="review-book" name="review-book">
+        <option value="0">Pick the Book</option>
+        <option value="TTT">Tomorrow, and Tomorrow, and Tomorrow</option>
+        <option value="WYWH">Wish You Were Here</option>
+        <option value="TW">The Winners</option>
+        <option value="RBC">Remarkably Bright Creatures</option>
+        <option value="THN">The Hotel Nantucket</option>
+      </select><br>
+      <label for="review-comment">Review:</label><br>
+      <textarea id="review-comment" name="review-comment" rows="5" cols="50"></textarea><br>
+      <button class="details-button" id="submit-review-button" type="submit">Submit Review</button>
+    </div>
+  
+    <h1>Reviews</h1>
+    <ul id="review-list">
+      <!-- Reviews will be dynamically added here -->
+    </ul>
+  </div>
+
+    <footer class="footer">
+
+        <strong>MADE BY MYKOLA ZHUK</strong>
+        <p >"There is no greater loneliness than that of a samurai, except perhaps that of a tiger in the jungle."</p>
+
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
